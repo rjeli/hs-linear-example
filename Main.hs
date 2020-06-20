@@ -36,9 +36,6 @@ with #-> then linearHold wouldn't compile.
 data Box a where
     Box :: a -> Box a
 
-instance Show a => Show (Box a) where
-    show (Box x) = "Box(" ++ (show x) ++ ")"
-
 {-
 Because the Box constructor is nonlinear, the wrapped
 value isn't checked. So we can write this:
