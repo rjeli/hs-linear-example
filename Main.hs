@@ -47,6 +47,11 @@ value isn't checked. So we can write this:
 spookyLinearPair :: Box a #-> (a, a)
 spookyLinearPair (Box x) = (x, x)
 
+{-
+    See more in depth explanations at:
+    https://github.com/tweag/linear-base/blob/master/examples/Simple/Pure.hs
+-}
+
 main :: IO ()
 main = do
     putStrLn "hello linear types" 
